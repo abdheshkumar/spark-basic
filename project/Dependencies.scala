@@ -23,7 +23,7 @@ object Library {
   val sparktwitter   = "org.apache.spark"  %% "spark-streaming-twitter" % Version.spark
   val sparkSql       = "org.apache.spark"  %% "spark-sql"       % Version.spark
   val sparkMllib     = "org.apache.spark"  %% "spark-mllib"     % Version.spark
-  val hadoopClient   = "org.apache.hadoop" %  "hadoop-client"   % Version.hadoop
+  //val hadoopClient   = "org.apache.hadoop" %  "hadoop-client"   % Version.hadoop
   //val hadoopcommon   = "org.apache.hadoop" % "hadoop-common"    % "2.6.0" excludeAll ExclusionRule(organization = "org.mortbay.jetty", name = "servlet-api")
 }
 
@@ -34,7 +34,6 @@ object Dependencies {
     sparkStreaming,sparkCore,sparktwitter,sparkSql,sparkMllib,
     akkaActor,
     akkaTestKit,
-    hadoopClient,
     logbackClassic % "test",
     scalaTest      % "test",
     mockitoAll     % "test"
